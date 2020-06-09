@@ -58,14 +58,12 @@ math = {'斐波那契':[1170,1250],
         '小平邦彦':[1915,1997],
         '外尔':[1885,1955]}
 
-a = []
-b = []
-for i in math.keys():
-        a.append(math[i][0])
-        b.append(i)
-        print(math[i][0])
-print(a)
-print(b)
+a = [math[i][0] for i in math.keys()]
+
+b = [i for i in math.keys()]
+
+#print(a)
+#print(b)
 c = pd.DataFrame(b,a)
 c.to_excel(r'D:\项目存档\盐城数据搜集\2018盐城统计年鉴\res.xlsx',encoding='UTF-8')
 print(c)
