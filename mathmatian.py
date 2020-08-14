@@ -5,7 +5,9 @@
 # @File    : mathmatian.py
 # @Software: PyCharm
 import pandas as pd
-math = {'斐波那契':[1170,1250],
+
+
+mather = {'斐波那契':[1170,1250],
         '牛顿':[1642,1727],
         '艾伦·图灵':[1912,1594],
         '欧拉':[1707,1783],
@@ -59,12 +61,10 @@ math = {'斐波那契':[1170,1250],
         '外尔':[1885,1955]}
 
 a = [math[i][0] for i in math.keys()]
-
 b = [i for i in math.keys()]
-
 #print(a)
 #print(b)
 c = pd.DataFrame(b,a)
-c.to_excel(r'D:\项目存档\盐城数据搜集\2018盐城统计年鉴\res.xlsx',encoding='UTF-8')
+
 print(c)
 
